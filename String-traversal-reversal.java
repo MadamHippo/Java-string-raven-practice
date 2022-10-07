@@ -34,6 +34,7 @@ Complete the function reverseString() which has one parameter: String text. The 
 To accomplish this, you will need to use a for loop to traverse text.
 
 */
+// For Loop version:
 
 class Reverse {
   public static String reverseString(String text) {
@@ -47,3 +48,16 @@ class Reverse {
    
   }
   
+
+ // WHILE Loop Version of the for loop above:
+ 
+ public static String reverseString(String text) {
+  String reversed = new String("");
+  int i = 0;
+  while(i < text.length()) {
+    char nextCharacter = text.charAt(i);
+    reversed = nextCharacter + reversed;
+    i++;
+  }  
+  return reversed;
+}
